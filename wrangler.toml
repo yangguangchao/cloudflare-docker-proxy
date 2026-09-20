@@ -6,7 +6,7 @@ ip = "0.0.0.0"
 port = 8787
 local_protocol = "http"
 
-[env.vars]
+[vars]
 CUSTOM_DOMAIN = "guangchaoyang.cn"
 
 [env.dev.vars]
@@ -29,6 +29,7 @@ routes = [
 [env.production.vars]
 MODE = "production"
 TARGET_UPSTREAM = ""
+CUSTOM_DOMAIN = "guangchaoyang.cn"
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
